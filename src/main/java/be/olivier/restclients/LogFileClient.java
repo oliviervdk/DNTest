@@ -21,8 +21,7 @@ public class LogFileClient {
 				String line = scanner.nextLine();
 				//findStartRenderings
 				if(line.contains("Executing request startRendering")) {
-					LocalDateTime lineDateTime = converter.convert(line.substring(0, 23));
-					
+					LocalDateTime lineDateTime = converter.convert(line.substring(0, 23));					
 				}
 			}
 			return renderings;	
